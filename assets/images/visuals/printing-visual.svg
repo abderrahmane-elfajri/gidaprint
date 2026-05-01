@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Printing mockup</title>
+  <desc id="desc">Premium layered print mockup with flyers, business cards and brochure sheets.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081A2D"/>
+      <stop offset="55%" stop-color="#123B68"/>
+      <stop offset="100%" stop-color="#1A6A86"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E8F1F8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5C86A"/>
+      <stop offset="100%" stop-color="#FF8B62"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#04111E" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <g opacity="0.11">
+    <path d="M100 160h1000M100 260h1000M100 360h1000M100 460h1000M100 560h1000M100 660h1000" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="140" y="188" width="390" height="510" rx="34" fill="url(#paper)" transform="rotate(-8 140 188)"/>
+    <rect x="160" y="210" width="350" height="84" rx="22" fill="#0F355C" transform="rotate(-8 160 210)"/>
+    <circle cx="238" cy="250" r="26" fill="url(#accent)" transform="rotate(-8 238 250)"/>
+    <rect x="282" y="230" width="140" height="14" rx="7" fill="#8A9EB2" transform="rotate(-8 282 230)"/>
+    <rect x="284" y="256" width="94" height="10" rx="5" fill="#AAB8C8" transform="rotate(-8 284 256)"/>
+    <rect x="170" y="328" width="160" height="180" rx="18" fill="#E8EEF4" transform="rotate(-8 170 328)"/>
+    <rect x="346" y="328" width="140" height="50" rx="14" fill="#D7E2EC" transform="rotate(-8 346 328)"/>
+    <rect x="346" y="390" width="140" height="50" rx="14" fill="#D7E2EC" transform="rotate(-8 346 390)"/>
+    <rect x="346" y="452" width="140" height="50" rx="14" fill="#D7E2EC" transform="rotate(-8 346 452)"/>
+    <rect x="172" y="548" width="314" height="58" rx="16" fill="#0F355C" transform="rotate(-8 172 548)"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="560" y="180" width="500" height="266" rx="32" fill="#F7FBFD"/>
+    <rect x="592" y="212" width="436" height="40" rx="14" fill="#0F355C"/>
+    <rect x="592" y="270" width="128" height="128" rx="18" fill="url(#accent)"/>
+    <rect x="734" y="270" width="128" height="128" rx="18" fill="#DCE6EF"/>
+    <rect x="876" y="270" width="130" height="128" rx="18" fill="#DCE6EF"/>
+    <rect x="592" y="414" width="414" height="18" rx="9" fill="#C9D6E2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="638" y="506" width="476" height="208" rx="34" fill="#081A2D"/>
+    <rect x="664" y="534" width="424" height="152" rx="22" fill="#184A72"/>
+    <rect x="698" y="570" width="150" height="18" rx="9" fill="#FFFFFF"/>
+    <rect x="698" y="606" width="244" height="14" rx="7" fill="#BFD1E0"/>
+    <rect x="698" y="632" width="210" height="14" rx="7" fill="#BFD1E0"/>
+    <rect x="978" y="570" width="86" height="86" rx="24" fill="url(#accent)"/>
+  </g>
+</svg>

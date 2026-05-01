@@ -1,0 +1,44 @@
+{
+  "name": "gidaprint-website",
+  "version": "1.0.0",
+  "description": "Professional website for GIDAPRINT - Communication Visuelle & Digitale Agency",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -p 8000 -c-1",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o assets/css/styles.min.css assets/css/styles.css assets/css/animations.css",
+    "minify:js": "terser assets/js/main.js -o assets/js/main.min.js",
+    "serve": "python -m http.server 8000",
+    "deploy": "echo 'Upload files to your hosting provider'",
+    "test": "echo 'Running tests...'",
+    "dev": "watch 'npm run build' assets/"
+  },
+  "keywords": [
+    "agency",
+    "communication",
+    "imprimerie",
+    "signalétique",
+    "marketing digital",
+    "Casablanca",
+    "Morocco"
+  ],
+  "author": "GIDAPRINT",
+  "license": "Proprietary",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.16.1",
+    "http-server": "^14.1.1",
+    "node-watch": "^0.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gidaprint/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gidaprint/website/issues"
+  },
+  "homepage": "https://gidaprint.ma",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

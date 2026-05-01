@@ -1,0 +1,122 @@
+{
+  "site": {
+    "name": "GIDAPRINT",
+    "url": "https://gidaprint.ma",
+    "description": "Agence de communication visuelle et digitale à Casablanca",
+    "language": "fr",
+    "theme": {
+      "primary": "#1E2A44",
+      "secondary": "#00AEEF",
+      "accent_magenta": "#EC008C",
+      "accent_yellow": "#FFC20E"
+    }
+  },
+  "contact": {
+    "phone": "+212 7 86 62 07 20",
+    "whatsapp": "+212 7 86 62 07 20",
+    "email": "gidaprint84@gmail.com",
+    "responsible": "Yassine Elfajri",
+    "location": "Casablanca, Morocco"
+  },
+  "services": {
+    "printing": {
+      "name": "Imprimerie",
+      "icon": "🖨️",
+      "categories": ["Publicité", "Carterie", "Office", "Packaging", "Resto/Hôtels"]
+    },
+    "signage": {
+      "name": "Signalétique",
+      "icon": "🏷️",
+      "categories": ["Supports Souples", "Panneaux Rigides", "PLV Extérieure"]
+    },
+    "promotional": {
+      "name": "Objets Publicitaires",
+      "icon": "🎁",
+      "categories": ["Textile", "Événementiel", "High Tech", "Bureau", "Goodies", "Maison"]
+    },
+    "web": {
+      "name": "Création Site Web",
+      "icon": "💻",
+      "services": ["Site Vitrine", "Landing Page", "E-commerce", "Refonte", "SEO", "Maintenance"]
+    },
+    "social_media": {
+      "name": "Social Media Marketing",
+      "icon": "📱",
+      "services": ["Instagram", "Facebook", "Posts", "Reels", "Stories", "Community Management"]
+    }
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/gidaprint",
+    "instagram": "https://www.instagram.com/gidaprint",
+    "linkedin": "https://www.linkedin.com/company/gidaprint",
+    "whatsapp": "https://wa.me/212786620720"
+  },
+  "business": {
+    "type": "LocalBusiness",
+    "industry": "Communication & Marketing",
+    "service_area": "Casablanca, Morocco",
+    "operating_hours": {
+      "monday": "09:00-18:00",
+      "tuesday": "09:00-18:00",
+      "wednesday": "09:00-18:00",
+      "thursday": "09:00-18:00",
+      "friday": "09:00-18:00",
+      "saturday": "10:00-16:00",
+      "sunday": "closed"
+    }
+  },
+  "seo": {
+    "keywords": [
+      "imprimerie Casablanca",
+      "impression offset Casablanca",
+      "impression numérique Maroc",
+      "cartes de visite Casablanca",
+      "flyers Casablanca",
+      "brochures Casablanca",
+      "signalétique Casablanca",
+      "enseignes Casablanca",
+      "objets publicitaires Maroc",
+      "création site web Casablanca",
+      "agence social media Casablanca",
+      "marketing digital Maroc"
+    ],
+    "title": "GIDAPRINT | Imprimerie, Signalétique & Agence Digitale à Casablanca",
+    "description": "GIDAPRINT vous accompagne dans l'impression professionnelle, la signalétique, les objets publicitaires, la création de sites web et la gestion des réseaux sociaux à Casablanca. Devis rapide par WhatsApp.",
+    "og_image": "https://gidaprint.ma/og-image.jpg",
+    "og_title": "GIDAPRINT | Imprimerie, Signalétique & Agence Digitale à Casablanca",
+    "og_description": "Impression professionnelle, signalétique, objets publicitaires, création de sites web et gestion des réseaux sociaux."
+  },
+  "pages": {
+    "home": {
+      "title": "Accueil",
+      "url": "/index.html",
+      "priority": "1.0"
+    },
+    "services": {
+      "title": "Services",
+      "url": "/index.html#services",
+      "priority": "0.9"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "url": "/index.html#portfolio",
+      "priority": "0.8"
+    },
+    "quote": {
+      "title": "Demande de Devis",
+      "url": "/index.html#devis",
+      "priority": "0.9"
+    },
+    "contact": {
+      "title": "Contact",
+      "url": "/index.html#contact",
+      "priority": "0.8"
+    }
+  },
+  "analytics": {
+    "google_analytics": "YOUR_GA_ID",
+    "google_search_console": "YOUR_GSC_ID"
+  },
+  "version": "1.0.0",
+  "last_updated": "2026-05-01"
+}

@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GIDAPRINT vous accompagne dans l'impression professionnelle, la signalétique, les objets publicitaires, la création de sites web et la gestion des réseaux sociaux à Casablanca. Devis rapide par WhatsApp.">
+    <meta name="keywords" content="imprimerie Casablanca, impression offset Casablanca, impression numérique Maroc, cartes de visite Casablanca, flyers Casablanca, brochures Casablanca, signalétique Casablanca, enseignes Casablanca, objets publicitaires Maroc, création site web Casablanca, agence social media Casablanca, marketing digital Maroc">
+    <meta name="author" content="GIDAPRINT">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="GIDAPRINT | Imprimerie, Signalétique & Agence Digitale à Casablanca">
+    <meta property="og:description" content="Impression professionnelle, signalétique, objets publicitaires, création de sites web et gestion des réseaux sociaux.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    
+    <title>GIDAPRINT | Imprimerie, Signalétique & Agence Digitale à Casablanca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-wrapper">
+                <a href="#" class="logo">
+                    <div class="logo-placeholder">
+                        <img id="logoImg" src="assets/images/logo.png" alt="GIDAPRINT Logo" class="logo-image">
+                    </div>
+                    <span class="logo-text">GIDAPRINT</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                        <li class="nav-item-services">
+                            <a href="#services" class="nav-link">Services</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col">
+                                        <h4>Imprimerie</h4>
+                                        <ul>
+                                            <li><a href="#imprimerie-pub">Publicité</a></li>
+                                            <li><a href="#imprimerie-carterie">Carterie</a></li>
+                                            <li><a href="#imprimerie-office">Office</a></li>
+                                            <li><a href="#imprimerie-packaging">Packaging</a></li>
+                                            <li><a href="#imprimerie-resto">Resto / Hôtels</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <h4>Signalétique</h4>
+                                        <ul>
+                                            <li><a href="#signalétique-souples">Supports Souples</a></li>
+                                            <li><a href="#signalétique-rigides">Panneaux Rigides</a></li>
+                                            <li><a href="#signalétique-plv">PLV & Événementiel</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <h4>Solutions Digitales</h4>
+                                        <ul>
+                                            <li><a href="#objets-publicitaires">Objets Publicitaires</a></li>
+                                            <li><a href="#site-web">Création Site Web</a></li>
+                                            <li><a href="#social-media">Social Media Marketing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#devis" class="nav-link">Devis</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="btn-primary-nav" onclick="scrollToSection('devis')">Devis Gratuit</button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-background">
+            <div class="hero-image" style="background: linear-gradient(135deg, rgba(240, 248, 255, 0.9), rgba(230, 245, 255, 0.9)), url('assets/images/images/services-global.jpg'); background-size: cover; background-position: center;"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Boostez votre visibilité avec <span class="text-gradient">GIDAPRINT</span></h1>
+                <p class="hero-subtitle">Impression professionnelle, signalétique, objets publicitaires, création de sites web et gestion des réseaux sociaux pour développer votre business.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('devis')">
+                        <span>Demander un devis</span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="openWhatsApp()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('services')">
+                        <span>Voir nos services</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-cards">
+                <div class="hero-card card-impression">
+                    <div class="card-icon"><i class="fas fa-print"></i></div>
+                    <h3>Impression</h3>
+                    <p>Qualité CMYK</p>
+                </div>
+                <div class="hero-card card-signage">
+                    <div class="card-icon"><i class="fas fa-signs-post"></i></div>
+                    <h3>Signalétique</h3>
+                    <p>Solutions Visuelles</p>
+                </div>
+                <div class="hero-card card-digital">
+                    <div class="card-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Digitale</h3>
+                    <p>Web & Réseaux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services</h2>
+                <p>Solutions complètes de communication visuelle et digitale</p>
+            </div>
+
+            <!-- Imprimerie -->
+            <div class="services-category" id="imprimerie">
+                <h3 class="category-title">Imprimerie</h3>
+                
+                <div class="subcategory">
+                    <h4 id="imprimerie-pub">Publicité</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-file-pdf"></i></div>
+                            <h5>Flyers</h5>
+                            <p>Distribution efficace</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-book"></i></div>
+                            <h5>Dépliants</h5>
+                            <p>Format compact</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-book-open"></i></div>
+                            <h5>Brochures</h5>
+                            <p>Présentation premium</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-image"></i></div>
+                            <h5>Affiches</h5>
+                            <p>Grand format</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-sticker-mule"></i></div>
+                            <h5>Autocollants</h5>
+                            <p>Design personnalisé</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-tag"></i></div>
+                            <h5>Étiquettes</h5>
+                            <p>Identification produit</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-book"></i></div>
+                            <h5>Impression Livre</h5>
+                            <p>Tous formats</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-envelope"></i></div>
+                            <h5>Prospectus</h5>
+                            <p>Mailing efficace</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4 id="imprimerie-carterie">Carterie</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-id-card"></i></div>
+                            <h5>Cartes de Visite</h5>
+                            <p>Finition premium</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-envelope"></i></div>
+                            <h5>Cartes Postales</h5>
+                            <p>Communications</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-bookmark"></i></div>
+                            <h5>Marque-pages</h5>
+                            <p>Objets mémorable</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-letter"></i></div>
+                            <h5>Cartes Correspondance</h5>
+                            <p>Communication</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-heart"></i></div>
+                            <h5>Cartes d'Invitation</h5>
+                            <p>Événements</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-baby"></i></div>
+                            <h5>Faire-part Naissance</h5>
+                            <p>Moments spéciaux</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-snowflake"></i></div>
+                            <h5>Cartes de Vœux</h5>
+                            <p>Saisons festives</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4 id="imprimerie-office">Office</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-folder"></i></div>
+                            <h5>Chemises à Rabats</h5>
+                            <p>Rangement pro</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-envelope"></i></div>
+                            <h5>Enveloppes</h5>
+                            <p>Courrier professionnel</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-file-lines"></i></div>
+                            <h5>Têtes de Lettre</h5>
+                            <p>Identité corporate</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-stamp"></i></div>
+                            <h5>Tampons</h5>
+                            <p>Marquage pratique</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-sticky-note"></i></div>
+                            <h5>Blocs-notes</h5>
+                            <p>Bloc adhésif</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-ruler"></i></div>
+                            <h5>Sous-mains</h5>
+                            <p>Protection bureau</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-clone"></i></div>
+                            <h5>Carnets Autocopiants</h5>
+                            <p>Duplication facile</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-calendar"></i></div>
+                            <h5>Calendriers Personnalisés</h5>
+                            <p>Toute l'année</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4 id="imprimerie-packaging">Packaging</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-shopping-bag"></i></div>
+                            <h5>Sacs Kraft Standards</h5>
+                            <p>Écologique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4 id="imprimerie-resto">Resto / Hôtels</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                            <h5>Menus Restaurant</h5>
+                            <p>Présentation élégante</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-chair"></i></div>
+                            <h5>Sets de Table</h5>
+                            <p>Ambiance</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-door-open"></i></div>
+                            <h5>Accroche-portes</h5>
+                            <p>Signalisation</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-wine-glass"></i></div>
+                            <h5>Chevalets de Table</h5>
+                            <p>Support informatif</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+                            <h5>Porte-addition</h5>
+                            <p>Paiement elegant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signalétique -->
+            <div class="services-category" id="signaletique">
+                <h3 class="category-title">Signalétique</h3>
+                
+                <div class="subcategory">
+                    <h4 id="signalétique-souples">Supports Souples</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-rectangle-landscape"></i></div>
+                            <h5>Bâche</h5>
+                            <p>Grande visibilité</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-palette"></i></div>
+                            <h5>Adhésif Vinyle</h5>
+                            <p>Personnalisation</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-shirt"></i></div>
+                            <h5>Tissu Imprimé</h5>
+                            <p>Textiles</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-scroll"></i></div>
+                            <h5>Affiche Poster</h5>
+                            <p>Décoration</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-flag"></i></div>
+                            <h5>Drapeaux</h5>
+                            <p>Marquage territorial</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-image"></i></div>
+                            <h5>Fond de Scène</h5>
+                            <p>Événementiel</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-rectangle-portrait"></i></div>
+                            <h5>Tifo</h5>
+                            <p>Support fan</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-cube"></i></div>
+                            <h5>Lino Personnalisé</h5>
+                            <p>Revêtement</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-car"></i></div>
+                            <h5>Stickers Voiture</h5>
+                            <p>Mobilité marketing</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-shirt"></i></div>
+                            <h5>Impression Tissu</h5>
+                            <p>T-shirt, etc.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-water"></i></div>
+                            <h5>Tissu Néoprène Imprimé</h5>
+                            <p>Matière premium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4 id="signalétique-rigides">Panneaux Rigides</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-square"></i></div>
+                            <h5>Panneau PVC</h5>
+                            <p>Durable</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-circle"></i></div>
+                            <h5>Akylux</h5>
+                            <p>Léger robuste</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                            <h5>Alu Dibond</h5>
+                            <p>Aluminium premium</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-box"></i></div>
+                            <h5>Carton Plume</h5>
+                            <p>Léger économique</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-gem"></i></div>
+                            <h5>Plexiglas PMMA</h5>
+                            <p>Transparent</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-building"></i></div>
+                            <h5>Plaque Professionnelle</h5>
+                            <p>Identité</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-store"></i></div>
+                            <h5>Enseigne Publicitaire</h5>
+                            <p>Commerce</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-home"></i></div>
+                            <h5>Panneau Immobilier</h5>
+                            <p>Vente location</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4 id="signalétique-plv">PLV Extérieure & Événementiel</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-party-horn"></i></div>
+                            <h5>Banderole Publicitaire</h5>
+                            <p>Impact maximal</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-tv"></i></div>
+                            <h5>Panneau Publicitaire</h5>
+                            <p>Visibilité</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-traffic-light"></i></div>
+                            <h5>Stop Trottoir</h5>
+                            <p>Street marketing</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-umbrella"></i></div>
+                            <h5>Parasol Publicitaire</h5>
+                            <p>Confort visibilité</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-tent"></i></div>
+                            <h5>Structures de Stands</h5>
+                            <p>Modulable</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-scroll"></i></div>
+                            <h5>Roll Up</h5>
+                            <p>Portable pratique</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-water"></i></div>
+                            <h5>Beach Flag</h5>
+                            <p>Plage événement</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-rectangle-ad"></i></div>
+                            <h5>Banner</h5>
+                            <p>Suspendu</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-monument"></i></div>
+                            <h5>Totem Publicitaire</h5>
+                            <p>Point focal</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-camera"></i></div>
+                            <h5>Photocalls</h5>
+                            <p>Événementiel</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-building"></i></div>
+                            <h5>Stands</h5>
+                            <p>Aménagement</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-cash-register"></i></div>
+                            <h5>Comptoirs</h5>
+                            <p>Installation</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-mirror"></i></div>
+                            <h5>Enseignes Suspendues</h5>
+                            <p>Accrochage</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-folder-open"></i></div>
+                            <h5>Porte-documents Tissu</h5>
+                            <p>Rangement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objets Publicitaires -->
+            <div class="services-category" id="objets-publicitaires">
+                <h3 class="category-title">Objets Publicitaires</h3>
+                
+                <div class="subcategory">
+                    <h4>Textile</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-shirt"></i></div>
+                            <h5>T-shirt Personnalisé</h5>
+                            <p>Confortable</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-shopping-bag"></i></div>
+                            <h5>Tote Bag & Sac</h5>
+                            <p>Pratique</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-jacket"></i></div>
+                            <h5>Sweat Personnalisé</h5>
+                            <p>Chaleur</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-vest"></i></div>
+                            <h5>Polo Personnalisé</h5>
+                            <p>Élégant professionnel</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-vest-patches"></i></div>
+                            <h5>Vêtement de Travail</h5>
+                            <p>Sécurité confort</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4>Événementiel</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-glass-water"></i></div>
+                            <h5>Gobelet Personnalisé</h5>
+                            <p>Réutilisable</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-id-badge"></i></div>
+                            <h5>Tour de Cou</h5>
+                            <p>Badge identification</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-candy"></i></div>
+                            <h5>Bonbons Publicitaires</h5>
+                            <p>Gourmandise</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-medal"></i></div>
+                            <h5>Badge Personnalisé</h5>
+                            <p>Identité</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-ring"></i></div>
+                            <h5>Bracelet Personnalisé</h5>
+                            <p>Accessoire</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-champagne-glasses"></i></div>
+                            <h5>Verre Personnalisé</h5>
+                            <p>Élégance</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-glasses"></i></div>
+                            <h5>Lunettes Soleil</h5>
+                            <p>Style</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4>High Tech</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-usb"></i></div>
+                            <h5>Clé USB Personnalisée</h5>
+                            <p>Stockage</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-battery-half"></i></div>
+                            <h5>Batterie Externe</h5>
+                            <p>Autonomie</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-computer-mouse"></i></div>
+                            <h5>Tapis Souris</h5>
+                            <p>Bureau</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-plug"></i></div>
+                            <h5>Hub USB Personnalisé</h5>
+                            <p>Connectivité</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-wifi"></i></div>
+                            <h5>Souris Bluetooth</h5>
+                            <p>Wireless</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4>Écriture et Bureau</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                            <h5>Stylo Personnalisé</h5>
+                            <p>Écriture</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-book"></i></div>
+                            <h5>Carnet & Bloc-notes</h5>
+                            <p>Notes quotidiennes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4>Goodies</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-key"></i></div>
+                            <h5>Porte-clés</h5>
+                            <p>Pratique</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-fire"></i></div>
+                            <h5>Briquet</h5>
+                            <p>Accessoire</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-magnet"></i></div>
+                            <h5>Papier Magnétique</h5>
+                            <p>Adhésion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h4>Maison et Déco</h4>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-chair"></i></div>
+                            <h5>Mobilier Publicitaire</h5>
+                            <p>Installation</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-couch"></i></div>
+                            <h5>Coussin Personnalisé</h5>
+                            <p>Confort</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-mug-hot"></i></div>
+                            <h5>Mug Personnalisé</h5>
+                            <p>Quotidien</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-bottle-water"></i></div>
+                            <h5>Gourde Personnalisée</h5>
+                            <p>Hydratation éco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Création Site Web -->
+            <div class="services-category" id="site-web">
+                <h3 class="category-title">Création Site Web</h3>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-globe"></i></div>
+                        <h5>Site Vitrine Professionnel</h5>
+                        <p>Présentation entreprise</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                        <h5>Landing Page</h5>
+                        <p>Conversion optimisée</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h5>Site E-commerce</h5>
+                        <p>Vente en ligne</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-refresh"></i></div>
+                        <h5>Refonte de Site</h5>
+                        <p>Modernisation</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-magnifying-glass"></i></div>
+                        <h5>SEO Technique</h5>
+                        <p>Optimisation moteur</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-tools"></i></div>
+                        <h5>Maintenance</h5>
+                        <p>Support continu</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h5>Hébergement & Domaine</h5>
+                        <p>Infrastructure</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Marketing -->
+            <div class="services-category" id="social-media">
+                <h3 class="category-title">Social Media Marketing</h3>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fab fa-instagram"></i></div>
+                        <h5>Gestion Instagram</h5>
+                        <p>Contenu quotidien</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fab fa-facebook"></i></div>
+                        <h5>Gestion Facebook</h5>
+                        <p>Communauté</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-pen-to-square"></i></div>
+                        <h5>Création de Posts</h5>
+                        <p>Contenu viral</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-film"></i></div>
+                        <h5>Création de Reels</h5>
+                        <p>Vidéos courtes</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-image"></i></div>
+                        <h5>Stories</h5>
+                        <p>Contenu éphémère</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-calendar-days"></i></div>
+                        <h5>Calendrier de Contenu</h5>
+                        <p>Planification</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-comments"></i></div>
+                        <h5>Community Management</h5>
+                        <p>Engagement</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h5>Publicité Meta Ads</h5>
+                        <p>Ciblage avancé</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-star"></i></div>
+                        <h5>Branding Digital</h5>
+                        <p>Identité en ligne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comment ça marche</h2>
+                <p>Processus simple et efficace</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number"><i class="fas fa-comments"></i></div>
+                    <h3>Consultation</h3>
+                    <p>Discutons de vos besoins et de vos objectifs</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Devis</h3>
+                    <p>Propositions tarifaires adaptées</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3>Création</h3>
+                    <p>Nos experts réalisent votre projet</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number"><i class="fas fa-box-open"></i></div>
+                    <h3>Livraison</h3>
+                    <p>Résultats professionnels et rapides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <p>Découvrez nos derniers projets</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #1E2A44 0%, #00AEEF 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Campagne Impression</h3>
+                        <p>Flyers et brochures</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #EC008C 0%, #FFC20E 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Signalétique Boutique</h3>
+                        <p>Enseignes et panneaux</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #00AEEF 0%, #EC008C 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Objets Publicitaires</h3>
+                        <p>T-shirts et sacs personnalisés</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #FFC20E 0%, #1E2A44 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Site Web Responsif</h3>
+                        <p>E-commerce et vitrine</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #1E2A44 0%, #EC008C 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Campaign</h3>
+                        <p>Instagram et Facebook</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #00AEEF 0%, #FFC20E 100%);"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Branding Complet</h3>
+                        <p>Identité visuelle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Témoignages</h2>
+                <p>Ce que nos clients disent</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"GIDAPRINT a transformé notre présence visuelle. Excellent travail et service rapide!"</p>
+                    <h4>Ahmed M.</h4>
+                    <p class="testimonial-role">Directeur Marketing</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Équipe professionnelle, créative et très réactive. Je recommande vivement!"</p>
+                    <h4>Fatima B.</h4>
+                    <p class="testimonial-role">Gérante Boutique</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Qualité d'impression impeccable et designs modernes. Parfait pour notre marque."</p>
+                    <h4>Karim L.</h4>
+                    <p class="testimonial-role">Entrepreneur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Devis Section -->
+    <section id="devis" class="devis-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Demande de Devis</h2>
+                <p>Obtenez une offre personnalisée en quelques minutes</p>
+            </div>
+
+            <form class="devis-form" id="devisForm">
+                <div class="form-group">
+                    <label for="nom">Nom complet *</label>
+                    <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone / WhatsApp *</label>
+                    <input type="tel" id="telephone" name="telephone" required placeholder="+212 7 86 62 07 20">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Type de service *</label>
+                    <select id="service" name="service" required>
+                        <option value="">-- Sélectionnez un service --</option>
+                        <option value="imprimerie">Imprimerie</option>
+                        <option value="signaletique">Signalétique</option>
+                        <option value="objets-publicitaires">Objets Publicitaires</option>
+                        <option value="site-web">Création Site Web</option>
+                        <option value="social-media">Social Media Marketing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantite">Quantité *</label>
+                    <input type="number" id="quantite" name="quantite" required placeholder="Exemple: 1000">
+                </div>
+
+                <div class="form-group">
+                    <label for="format">Format / Dimensions</label>
+                    <input type="text" id="format" name="format" placeholder="A4, 10x15cm, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message détaillé *</label>
+                    <textarea id="message" name="message" required placeholder="Décrivez votre projet..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="fichier">Joindre fichier/logo</label>
+                    <input type="file" id="fichier" name="fichier" accept=".pdf,.ai,.psd,.jpg,.png">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>Nous sommes à votre écoute</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+212786620720">+212 7 86 62 07 20</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/212786620720" target="_blank">+212 7 86 62 07 20</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:gidaprint84@gmail.com">gidaprint84@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-user"></i></div>
+                    <h3>Responsable</h3>
+                    <p>Yassine Elfajri</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3>Localisation</h3>
+                <p>Casablanca, Maroc</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <button class="whatsapp-button" id="whatsappButton" onclick="openWhatsApp()" title="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.947 1.227l-.356.214-3.699-.974.992 3.605-.235.374a9.86 9.86 0 1413.243-13.241z"/>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GIDAPRINT</h3>
+                    <p>Votre agence de communication visuelle et digitale</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#imprimerie">Imprimerie</a></li>
+                        <li><a href="#signaletique">Signalétique</a></li>
+                        <li><a href="#site-web">Création Web</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+212786620720">+212 7 86 62 07 20</a></li>
+                        <li><a href="mailto:gidaprint84@gmail.com">gidaprint84@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GIDAPRINT. Tous droits réservés. | Make your Brand Visible</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GIDAPRINT",
+        "image": "https://gidaprint.ma/logo.png",
+        "description": "GIDAPRINT - Agence de communication visuelle et digitale à Casablanca. Imprimerie, signalétique, objets publicitaires, création site web et social media marketing.",
+        "url": "https://gidaprint.ma",
+        "telephone": "+212786620720",
+        "email": "gidaprint84@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Casablanca",
+            "addressCountry": "MA"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+212786620720",
+            "email": "gidaprint84@gmail.com"
+        },
+        "areaServed": "MA",
+        "priceRange": "$$",
+        "sameAs": [
+            "https://www.facebook.com/gidaprint",
+            "https://www.instagram.com/gidaprint"
+        ]
+    }
+    </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

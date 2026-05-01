@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap
+Sitemap: https://gidaprint.ma/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Allow search engines to index images
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Prevent access to certain resources
+User-agent: *
+Disallow: /*.json$
+# Fast crawling for Google
+User-agent: Googlebot
+Crawl-delay: 0
