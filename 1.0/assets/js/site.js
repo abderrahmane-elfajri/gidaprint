@@ -8,11 +8,37 @@
     const megaTriggers = document.querySelectorAll('[data-mega-trigger]');
     const whatsappButton = document.querySelector('.whatsapp-fab');
     const currentPath = window.location.pathname.replace(/\\/g, '/').split('/').pop() || 'index.html';
+    const mobileMegaQuery = window.matchMedia('(max-width: 860px)');
+
+    const syncMobileMegaTriggers = () => {
+        megaTriggers.forEach(trigger => {
+            const parentItem = trigger.closest('.nav-item.has-mega');
+            if (mobileMegaQuery.matches) {
+                if (!trigger.dataset.desktopHref) {
+                    trigger.dataset.desktopHref = trigger.getAttribute('href') || '';
+                }
+                trigger.setAttribute('href', '#');
+                trigger.setAttribute('aria-expanded', parentItem && parentItem.classList.contains('is-open') ? 'true' : 'false');
+            } else if (trigger.dataset.desktopHref) {
+                trigger.setAttribute('href', trigger.dataset.desktopHref);
+                trigger.removeAttribute('aria-expanded');
+            }
+        });
+    };
 
     const closeNavigation = () => {
         if (navMenu) navMenu.classList.remove('is-open');
         if (navToggle) navToggle.classList.remove('is-open');
-        megaTriggers.forEach(trigger => trigger.classList.remove('is-open'));
+        megaTriggers.forEach(trigger => {
+            trigger.classList.remove('is-open');
+            const parentItem = trigger.closest('.nav-item.has-mega');
+            if (parentItem) {
+                parentItem.classList.remove('is-open');
+            }
+            if (trigger.hasAttribute('aria-expanded')) {
+                trigger.setAttribute('aria-expanded', 'false');
+            }
+        });
         body.classList.remove('nav-open');
     };
 
@@ -88,13 +114,35 @@
         });
     }
 
+    syncMobileMegaTriggers();
+    if (typeof mobileMegaQuery.addEventListener === 'function') {
+        mobileMegaQuery.addEventListener('change', syncMobileMegaTriggers);
+    } else if (typeof mobileMegaQuery.addListener === 'function') {
+        mobileMegaQuery.addListener(syncMobileMegaTriggers);
+    }
+
     megaTriggers.forEach(trigger => {
         trigger.addEventListener('click', event => {
             if (window.innerWidth > 860) return;
             event.preventDefault();
-            const open = !trigger.classList.contains('is-open');
-            megaTriggers.forEach(item => item.classList.remove('is-open'));
+            event.stopPropagation();
+            const parentItem = trigger.closest('.nav-item.has-mega');
+            const open = parentItem ? !parentItem.classList.contains('is-open') : !trigger.classList.contains('is-open');
+            megaTriggers.forEach(item => {
+                item.classList.remove('is-open');
+                const itemParent = item.closest('.nav-item.has-mega');
+                if (itemParent) {
+                    itemParent.classList.remove('is-open');
+                }
+                if (item.hasAttribute('aria-expanded')) {
+                    item.setAttribute('aria-expanded', 'false');
+                }
+            });
+            if (parentItem) {
+                parentItem.classList.toggle('is-open', open);
+            }
             trigger.classList.toggle('is-open', open);
+            trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
     });
 
@@ -106,6 +154,9 @@
 
     document.querySelectorAll('.nav-link, .mega-links a, [data-close-nav]').forEach(link => {
         link.addEventListener('click', () => {
+            if (link.matches('[data-mega-trigger]')) {
+                return;
+            }
             if (window.innerWidth <= 860) {
                 closeNavigation();
             }
