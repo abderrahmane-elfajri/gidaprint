@@ -79,20 +79,13 @@ Complete guide to deploy your website to various hosting platforms.
 ### Option 3: GitHub Pages (Free)
 
 #### Setup:
-```bash
-# 1. Create a repository named username.github.io
-# 2. Clone and add your files
-git clone https://github.com/yourusername/username.github.io.git
-cd username.github.io
-cp -r /path/to/gida\ print/* .
+1. Push this repository to GitHub on the `main` branch.
+2. In GitHub, open `Settings > Pages`.
+3. Set `Build and deployment` to `GitHub Actions`.
+4. Push a change or run the `Deploy GitHub Pages` workflow manually.
+5. Your site will be published from the root of the repository.
 
-# 3. Push to repository
-git add .
-git commit -m "Initial commit"
-git push origin main
-
-# 4. Site live at: https://yourusername.github.io
-```
+The repository already includes a workflow in `.github/workflows/pages.yml` and a `.nojekyll` file so static HTML, CSS, and JavaScript are published without Jekyll processing.
 
 #### Custom Domain:
 ```
