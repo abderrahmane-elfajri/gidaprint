@@ -318,3 +318,5 @@ Created with modern web technologies:
 **Status**: Production Ready
 
 Make your Brand Visible! 🚀
+#   g i d a p r i n t  
+ 
